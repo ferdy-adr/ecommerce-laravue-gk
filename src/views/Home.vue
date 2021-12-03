@@ -4,6 +4,7 @@
     <HeroSection />
     <BannerSection />
     <InstaSection />
+    <PartnerLogoSection />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Header from "@/components/Header.vue";
 import HeroSection from "@/components/HeroSection.vue";
 import BannerSection from "@/components/BannerSection.vue";
 import InstaSection from "@/components/InstaSection.vue";
+import PartnerLogoSection from "@/components/PartnerLogoSection.vue";
 
 export default {
   name: "Home",
@@ -23,6 +25,7 @@ export default {
     HeroSection,
     BannerSection,
     InstaSection,
+    PartnerLogoSection,
   },
 };
 </script>
