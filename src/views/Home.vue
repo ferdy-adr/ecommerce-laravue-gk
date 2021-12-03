@@ -2,6 +2,7 @@
   <div class="home">
     <Header />
     <HeroSection />
+    <BannerSection />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 import Header from "@/components/Header.vue";
 import HeroSection from "@/components/HeroSection.vue";
+import BannerSection from "@/components/BannerSection.vue";
 
 export default {
   name: "Home",
@@ -17,6 +19,7 @@ export default {
     // HelloWorld,
     Header,
     HeroSection,
+    BannerSection,
   },
 };
 </script>
