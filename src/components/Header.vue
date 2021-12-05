@@ -72,7 +72,11 @@
                     <h5>$120.00</h5>
                   </div>
                   <div class="select-button">
-                    <a href="#" class="primary-btn view-card">VIEW CARD</a>
+                    <router-link
+                      to="/shopping-cart"
+                      class="primary-btn view-card"
+                      >VIEW CART</router-link
+                    >
                     <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
                   </div>
                 </div>
