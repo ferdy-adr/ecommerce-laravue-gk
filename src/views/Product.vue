@@ -124,6 +124,7 @@
     </section>
     <!-- Product Shop Section End -->
 
+    <RelatedProductsSection />
     <Footer />
   </div>
 </template>
@@ -133,6 +134,7 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 import Header from "@/components/Header.vue";
 import carousel from "vue-owl-carousel";
+import RelatedProductsSection from "@/components/RelatedProductsSection.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -141,6 +143,7 @@ export default {
     // HelloWorld,
     Header,
     carousel,
+    RelatedProductsSection,
     Footer,
   },
   data() {
