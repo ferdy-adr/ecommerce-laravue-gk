@@ -25,11 +25,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="product-pic-zoom">
-                  <img
-                    class="product-big-img"
-                    src="img/products/jacket/lyle-scott-jacket-1.jpg"
-                    alt=""
-                  />
+                  <img class="product-big-img" :src="mainImage" alt="" />
                 </div>
                 <div class="product-thumbs">
                   <carousel
@@ -37,40 +33,28 @@
                     :dots="false"
                     class="product-thumbs-track ps-slider"
                   >
-                    <div
-                      class="pt active"
-                      data-imgbigurl="img/products/jacket/lyle-scott-jacket-1.jpg"
-                    >
+                    <div class="pt active" @click="changeImage(thumbs[0])">
                       <img
                         src="img/products/jacket/lyle-scott-jacket-1.jpg"
                         alt=""
                       />
                     </div>
 
-                    <div
-                      class="pt"
-                      data-imgbigurl="img/products/jacket/lyle-scott-jacket-2.jpg"
-                    >
+                    <div class="pt" @click="changeImage(thumbs[1])">
                       <img
                         src="img/products/jacket/lyle-scott-jacket-2.jpg"
                         alt=""
                       />
                     </div>
 
-                    <div
-                      class="pt"
-                      data-imgbigurl="img/products/jacket/lyle-scott-jacket-3.jpg"
-                    >
+                    <div class="pt" @click="changeImage(thumbs[2])">
                       <img
                         src="img/products/jacket/lyle-scott-jacket-3.jpg"
                         alt=""
                       />
                     </div>
 
-                    <div
-                      class="pt"
-                      data-imgbigurl="img/products/jacket/lyle-scott-jacket-4.jpg"
-                    >
+                    <div class="pt" @click="changeImage(thumbs[3])">
                       <img
                         src="img/products/jacket/lyle-scott-jacket-4.jpg"
                         alt=""
@@ -142,6 +126,22 @@ export default {
     Header,
     carousel,
     Footer,
+  },
+  data() {
+    return {
+      mainImage: "img/products/jacket/lyle-scott-jacket-1.jpg",
+      thumbs: [
+        "img/products/jacket/lyle-scott-jacket-1.jpg",
+        "img/products/jacket/lyle-scott-jacket-2.jpg",
+        "img/products/jacket/lyle-scott-jacket-3.jpg",
+        "img/products/jacket/lyle-scott-jacket-4.jpg",
+      ],
+    };
+  },
+  methods: {
+    changeImage(srcImage) {
+      this.mainImage = srcImage;
+    },
   },
 };
 </script>
