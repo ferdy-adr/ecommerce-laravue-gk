@@ -20,7 +20,8 @@
                     <a href="#"><i class="icon_bag_alt"></i></a>
                   </li>
                   <li class="quick-view">
-                    <a href="product.html">+ Quick View</a>
+                    <!-- <a href="product.html">+ Quick View</a> -->
+                    <router-link to="/product">+ Quick View</router-link>
                   </li>
                 </ul>
               </div>
