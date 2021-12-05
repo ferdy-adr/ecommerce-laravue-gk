@@ -33,28 +33,44 @@
                     :dots="false"
                     class="product-thumbs-track ps-slider"
                   >
-                    <div class="pt active" @click="changeImage(thumbs[0])">
+                    <div
+                      class="pt"
+                      @click="changeImage(thumbs[0])"
+                      :class="thumbs[0] == mainImage ? 'active' : ''"
+                    >
                       <img
                         src="img/products/jacket/lyle-scott-jacket-1.jpg"
                         alt=""
                       />
                     </div>
 
-                    <div class="pt" @click="changeImage(thumbs[1])">
+                    <div
+                      class="pt"
+                      @click="changeImage(thumbs[1])"
+                      :class="thumbs[1] == mainImage ? 'active' : ''"
+                    >
                       <img
                         src="img/products/jacket/lyle-scott-jacket-2.jpg"
                         alt=""
                       />
                     </div>
 
-                    <div class="pt" @click="changeImage(thumbs[2])">
+                    <div
+                      class="pt"
+                      @click="changeImage(thumbs[2])"
+                      :class="thumbs[2] == mainImage ? 'active' : ''"
+                    >
                       <img
                         src="img/products/jacket/lyle-scott-jacket-3.jpg"
                         alt=""
                       />
                     </div>
 
-                    <div class="pt" @click="changeImage(thumbs[3])">
+                    <div
+                      class="pt"
+                      @click="changeImage(thumbs[3])"
+                      :class="thumbs[3] == mainImage ? 'active' : ''"
+                    >
                       <img
                         src="img/products/jacket/lyle-scott-jacket-4.jpg"
                         alt=""
