@@ -26,7 +26,7 @@
                   </li>
                   <li class="quick-view">
                     <!-- <a href="product.html">+ Quick View</a> -->
-                    <router-link to="/product">+ Quick View</router-link>
+                    <router-link v-bind:to="'/product/' + itemProduct.id">+ Quick View</router-link>
                   </li>
                 </ul>
               </div>

@@ -155,11 +155,14 @@ export default {
         "img/products/jacket/lyle-scott-jacket-3.jpg",
         "img/products/jacket/lyle-scott-jacket-4.jpg",
       ],
+      idProduct: this.$route.params.id
     };
   },
   methods: {
     changeImage(srcImage) {
       this.mainImage = srcImage;
+      // eslint-disable-next-line no-console
+      console.log(this.idProduct);
     },
   },
 };
